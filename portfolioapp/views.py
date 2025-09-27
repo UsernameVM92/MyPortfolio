@@ -1,45 +1,40 @@
 from django.shortcuts import render, redirect
-from django.conf import settings
+from .forms import MessageForm
+from .models import Contact, Project, Skill
 from django.core.mail import send_mail
-from .forms import ContactForm
+from django.shortcuts import render, redirect
 
 
 def index(request):
-    return render(request, 'portfolioapp/index.html')
-
-
-def contacts(request):
-    return render(request, 'portfolioapp/contacts.html')
-
-
-def about_us(request):
-    return render(request, 'portfolioapp/about_us.html')
-
-
-def contact_view(request):
     success = False
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
 
-            try:
-                send_mail(
-                    subject=f"Нове повідомлення від {name}",
-                    message=message,
-                    from_email=getattr(settings, 'DEFAULT_FROM_EMAIL', 'webmaster@localhost'),
-                    recipient_list=[getattr(settings, 'CONTACT_RECEIVER_EMAIL', 'your@email')],
-                    fail_silently=False,
-                    reply_to=[email],
-                )
-            except Exception as e:
-                print("Email send failed:", e)
+    if request.method == "POST":
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            message = form.save()
+
+            send_mail(
+                subject=f"Нове повідомлення від {message.name}",
+                message=f"Ім'я: {message.name}\nEmail: {message.email}\n\n{message.message}",
+                from_email=message.email,
+                recipient_list=["vovamazur677@gmail.com"],
+            )
 
             success = True
-            form = ContactForm()
-    else:
-        form = ContactForm()
+            form = MessageForm()
 
-    return render(request, "portfolioapp/contact_section.html", {"form": form, "success": success})
+    else:
+        form = MessageForm()
+
+    contact = Contact.objects.first()
+    projects = Project.objects.all()
+    skills = Skill.objects.all()
+
+    return render(request, "portfolioapp/index.html", {
+        "form": form,
+        "success": success,
+        "contact": contact,
+        "projects": projects,
+        "skills": skills,
+    })
+

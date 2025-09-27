@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-67(132+$kvbx1kalkefcfpkar%#@1cxy9(5$sl$vefyo837_*8
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['VM778644.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'VM778644.pythonanywhere.com']
 
 
 INSTALLED_APPS = [
@@ -82,7 +82,6 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
 
 TEMPLATES[0]['DIRS'] = [BASE_DIR / "portfolioapp/templates"]
 
@@ -90,3 +89,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "vovamazur677@gmail.com"
+EMAIL_HOST_PASSWORD = "rsjv pyms spax yynu"
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

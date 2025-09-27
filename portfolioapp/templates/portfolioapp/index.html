@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
     <meta name="keywords" content="Володимир Мазур, Портфоліо пайтон розробник, Програміст портфоліо, Веб-розробник портфоліо">
-    <meta name="description" content="Я — Python розробник із досвідом у веб-розробці та створенні серверних застосунків. ">
+    <meta name="description" content="Я — Python розробник із досвідом у веб-розробці та створенні серверних застосунків.">
 
     <title>Володимир Мазур - Портфоліо</title>
 
@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
 
-    <script src="{% static 'js/jquery.js' %}" defer></script>
-    <script src="{% static 'js/nicepage.js' %}" defer></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/nicepage.js' %}"></script>
+
 
     <meta name="generator" content="Nicepage 7.13.4, nicepage.com">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700">
@@ -42,7 +43,7 @@
     <header class="u-clearfix u-header u-header" id="header">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
             <a href="{% url 'index' %}" class="u-image u-logo u-image-1">
-                <img src="{% static 'images/default-logo.png' %}" class="u-logo-image u-logo-image-1" alt="Логотип">
+                PORTFOLIO
             </a>
 
             <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
@@ -63,13 +64,13 @@
                 <div class="u-nav-container">
                     <ul class="u-nav u-unstyled u-nav-1" role="menubar">
                         <li class="u-nav-item" role="none">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'index' %}" style="padding: 10px 20px;" role="menuitem">Головна</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#carousel_82e8" style="padding: 10px 20px;" role="menuitem">Навички</a>
                         </li>
                         <li class="u-nav-item" role="none">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'about_us' %}" style="padding: 10px 20px;" role="menuitem">Про нас</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#carousel_8047" style="padding: 10px 20px;" role="menuitem">Проекти</a>
                         </li>
                         <li class="u-nav-item" role="none">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'contacts' %}" style="padding: 10px 20px;" role="menuitem">Контакти</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#sec-faec" style="padding: 10px 20px;" role="menuitem">Контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -81,13 +82,13 @@
                       <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
                       <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
                           <li class="u-nav-item">
-                              <a class="u-button-style u-nav-link" href="{% url 'index' %}">Головна</a>
+                              <a class="u-button-style u-nav-link" href="#carousel_82e8">Навички</a>
                           </li>
                           <li class="u-nav-item">
-                              <a class="u-button-style u-nav-link" href="{% url 'about_us' %}">Про нас</a>
+                                <a class="u-button-style u-nav-link" href="#carousel_8047">Проекти</a>
                           </li>
                           <li class="u-nav-item">
-                              <a class="u-button-style u-nav-link" href="{% url 'contacts' %}">Контакти</a>
+                                <a class="u-button-style u-nav-link" href="#sec-faec">Контакти</a>
                           </li>
                       </ul>
                   </div>
@@ -100,11 +101,15 @@
         <div class="u-container-align-center u-container-style u-expanded-width u-group u-image u-shading u-image-1"
              data-image-width="425" data-image-height="283"
              data-animation-name="flipIn" data-animation-duration="1500"
-             data-animation-delay="0" data-animation-direction="X">
+             data-animation-delay="0" data-animation-direction="X"
+             style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{% static "images/photo-1660385938160-b0dd49ef09d9.jpeg" %}');">
             <div class="u-container-layout u-valign-top u-container-layout-1">
                 <h1 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-1">
-                    Аналіз коду
+                    Володимир Мазур
                 </h1>
+                <h3>
+                    Я — Python розробник із досвідом у веб-розробці та створенні серверних застосунків.
+                </h3>
             </div>
         </div>
         <div class="data-layout-selected u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
@@ -122,13 +127,10 @@
                                     <span class="u-align-center u-file-icon u-grey-5 u-icon u-icon-circle u-icon-1">
                                         <img src="{% static 'images/17176822.png' %}" alt="">
                                     </span>
-                                    <h4 class="u-align-center u-text u-text-2">Тестування програм</h4>
+                                    <h4 class="u-align-center u-text u-text-2">Розробка ПЗ</h4>
                                     <p class="u-align-center u-text u-text-3">
-                                        Це ідеальний спосіб продемонструвати свою експертизу та талант у програмуванні.
+                                    Розробка програмного забезпечення самого різного напряму: розробка сайтів, ігор, аналіз даних та машинне навчання.
                                     </p>
-                                    <a href="#" class="u-btn u-button-style u-none u-text-body-color u-btn-1">
-                                        Learn more
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -142,13 +144,10 @@
                                     <span class="u-align-center u-file-icon u-grey-5 u-icon u-icon-circle u-icon-2">
                                         <img src="{% static 'images/3403129.png' %}" alt="">
                                     </span>
-                                    <h4 class="u-align-center u-text u-text-4">Оптимізація коду</h4>
+                                    <h4 class="u-align-center u-text u-text-4">Web програми</h4>
                                     <p class="u-align-center u-text u-text-5">
-                                        Ваше портфоліо пайтон розробника - відбиток вашої креативності та професіоналізму.
+                                        Розробка програм за допомогою фрейм ворків на Django, FastAPI та Flask. Керування базами даних(SQL) та верстка на HTML та CSS.
                                     </p>
-                                    <a href="#" class="u-btn u-button-style u-none u-text-body-color u-btn-2">
-                                        Learn more
-                                    </a>
                                 </div>
                             </div>
                             <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-20 u-layout-cell-4">
@@ -168,13 +167,10 @@
                                     <span class="u-align-center u-file-icon u-grey-5 u-icon u-icon-circle u-icon-3">
                                         <img src="{% static 'images/2668384.png' %}" alt="">
                                     </span>
-                                    <h4 class="u-align-center u-text u-text-6">Модульне програмування</h4>
+                                    <h4 class="u-align-center u-text u-text-6">Розробка ігор</h4>
                                     <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-7">
-                                        Створення портфоліо - важлива складова успіху як пайтон розробника у сучасному світі.
+                                    Програмування невеликих ігор на Pygame, як 2D, так і 3D за принципами об'ктно орієнтованого програмування.
                                     </p>
-                                    <a href="#" class="u-btn u-button-style u-none u-text-body-color u-btn-3">
-                                        Learn more
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -188,13 +184,10 @@
                                     <span class="u-align-center u-file-icon u-grey-5 u-icon u-icon-circle u-icon-4">
                                         <img src="{% static 'images/5214062-77e7122e.png' %}" alt="">
                                     </span>
-                                    <h4 class="u-align-center u-text u-text-8">Інтеграція API</h4>
+                                    <h4 class="u-align-center u-text u-text-8">Data Sciense та ML</h4>
                                     <p class="u-align-center u-text u-text-9">
-                                        Портфоліо пайтон розробника - це візитна картка його досягнень та навичок.
+                                    Аналіз даних та машинне навчання за допомогою Pandas та візуалізація статистики на Matplotlib.
                                     </p>
-                                    <a href="#" class="u-btn u-button-style u-none u-text-body-color u-btn-4">
-                                        Learn more
-                                    </a>
                                 </div>
                             </div>
                             <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-20 u-layout-cell-8">
@@ -208,274 +201,70 @@
         </div>
     </section>
 
-    <section class="u-clearfix u-container-align-center u-grey-5 u-section-2" id="carousel_82e8">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-                <div class="u-layout">
-                    <div class="u-layout-row">
+    <section class="u-clearfix u-container-align-center u-grey-5 u-section-combined" id="databases-dashboard">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-layout u-layout-row">
 
-                        <div class="u-container-align-left u-container-style u-layout-cell u-size-32 u-layout-cell-1"
-                             data-animation-name="fadeIn" data-animation-duration="1500" data-animation-delay="500">
-                            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                                <h2 class="u-align-left u-text u-text-1">Бази даних</h2>
-                                <ul class="u-align-left u-custom-list u-spacing-10 u-text u-text-2">
-                                    <li style="padding-left: 9px;">
-                                        <div class="u-list-icon u-text-palette-1-base">
-                                            <svg class="u-svg-content" viewBox="0 0 512 512">
-                                                <path d="m202.6 478-202.6-186.6 70.5-76.6
-                                                         121.5 111.9 239.4-292.7 80.6 65.9z"
-                                                      fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                        Smart Lighting Setup
-                                    </li>
-                                    <li style="padding-left: 9px;">
-                                        <div class="u-list-icon u-text-palette-1-base">
-                                            <svg class="u-svg-content" viewBox="0 0 512 512">
-                                                <path d="m202.6 478-202.6-186.6 70.5-76.6
-                                                         121.5 111.9 239.4-292.7 80.6 65.9z"
-                                                      fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                        Media Room Setup
-                                    </li>
-                                    <li style="padding-left: 9px;">
-                                        <div class="u-list-icon u-text-palette-1-base">
-                                            <svg class="u-svg-content" viewBox="0 0 512 512">
-                                                <path d="m202.6 478-202.6-186.6 70.5-76.6
-                                                         121.5 111.9 239.4-292.7 80.6 65.9z"
-                                                      fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                        Home Theater Setup
-                                    </li>
-                                    <li style="padding-left: 9px;">
-                                        <div class="u-list-icon u-text-palette-1-base">
-                                            <svg class="u-svg-content" viewBox="0 0 512 512">
-                                                <path d="m202.6 478-202.6-186.6 70.5-76.6
-                                                         121.5 111.9 239.4-292.7 80.6 65.9z"
-                                                      fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                        Smart Doorbell Installation
-                                    </li>
-                                    <li style="padding-left: 9px;">
-                                        <div class="u-list-icon u-text-palette-1-base">
-                                            <svg class="u-svg-content" viewBox="0 0 512 512">
-                                                <path d="m202.6 478-202.6-186.6 70.5-76.6
-                                                         121.5 111.9 239.4-292.7 80.6 65.9z"
-                                                      fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                        Smart Thermostat Installation
-                                    </li>
-                                    <li style="padding-left: 9px;">
-                                        <div class="u-list-icon u-text-palette-1-base">
-                                            <svg class="u-svg-content" viewBox="0 0 512 512">
-                                                <path d="m202.6 478-202.6-186.6 70.5-76.6
-                                                         121.5 111.9 239.4-292.7 80.6 65.9z"
-                                                      fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                        Smart Door Lock Installation
-                                    </li>
-                                </ul>
-                                <a href="#"
-                                   class="u-active-grey-80 u-align-left u-border-2
-                                          u-border-active-grey-80 u-border-hover-grey-80
-                                          u-border-palette-1-base u-btn u-btn-round
-                                          u-button-style u-hover-grey-80 u-none u-radius-50 u-btn-1">
-                                    Get Inspired
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="u-container-align-center u-container-style u-layout-cell u-size-28 u-layout-cell-2">
-                            <div class="u-container-layout u-valign-middle u-container-layout-2">
-                                <img class="u-image u-image-round u-radius u-image-1"
-                                     src="{% static 'images/photo-1517328894681-0f5dfabd463c.jpeg' %}"
-                                     alt="Database illustration"
-                                     data-image-width="340" data-image-height="425"
-                                     data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="700">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+              <h2 class="u-align-left u-text">Мої навички:</h2>
+              <ul class="u-align-left u-custom-list u-spacing-10 u-text">
+                {% for skill in skills %}
+                  <li>
+                    <span class="u-list-icon u-text-palette-1-base">✔</span>
+                    {{ skill.name }}
+                  </li>
+                {% empty %}
+                  <li>Скілів поки що немає</li>
+                {% endfor %}
+              </ul>
             </div>
-        </div>
-    </section>
 
-    <section class="u-clearfix u-container-align-center u-section-3" id="carousel_1fd3">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <h2 class="u-align-center u-text u-text-default u-text-1"
-                data-animation-name="customAnimationIn" data-animation-duration="1500">
-                Дизайн інтерфейсу
-            </h2>
 
-            <div class="u-expanded-width u-list u-list-1">
-                <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 u-grey-5 u-radius"
+               data-animation-name="flipIn" data-animation-duration="1500" data-animation-delay="700" data-animation-direction="X">
+            <div class="u-container-layout u-valign-middle u-container-layout-2">
+              <h2 class="u-align-center u-text">Мої досягнення</h2>
+              <p class="u-align-center u-text">
+                Досягнув успіху у створенні веб-додатків, маю практичний досвід у Django та сучасних інструментах веб-розробки.
+                  Кожен проект — це новий виклик, який я перетворюю на можливість зростання.
+              </p>
 
-                    <div class="u-container-style u-image u-image-round u-list-item u-radius-25
-                                u-repeater-item u-shading u-image-1"
-                         style="background-image: url('{% static "images/img1.jpeg" %}');"
-                         data-image-width="425" data-image-height="283"
-                         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
-                            <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-1"></div>
-                            <h4 class="u-text u-text-default u-text-2">Проектні роботи</h4>
-                            <p class="u-text u-text-default u-text-3">Професійне Портфоліо Пайтон Розробника</p>
-                        </div>
+              <div class="u-list u-expanded-width">
+                <div class="u-repeater">
+                  <div class="u-list-item u-repeater-item">
+                    <div class="u-container-layout u-valign-top">
+                      <h3 class="u-align-center u-text u-text-palette-1-base" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">
+                        15 000+
+                      </h3>
+                      <h6 class="u-align-center u-text">Рядків коду</h6>
                     </div>
+                  </div>
 
-                    <div class="u-container-style u-image u-image-round u-list-item u-radius-25
-                                u-repeater-item u-shading u-image-2"
-                         style="background-image: url('{% static "images/img2.jpeg" %}');"
-                         data-image-width="425" data-image-height="283"
-                         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
-                            <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-2"></div>
-                            <h4 class="u-text u-text-default u-text-4">Пайтон розробника портфоліо українська</h4>
-                            <p class="u-text u-text-default u-text-5">Інноваційний Портфоліо Пайтон Розробника</p>
-                        </div>
+                  <div class="u-list-item u-repeater-item">
+                    <div class="u-container-layout u-valign-top">
+                      <h3 class="u-align-center u-text u-text-palette-1-base" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">
+                        10+
+                      </h3>
+                      <h6 class="u-align-center u-text">Особистих проектів</h6>
                     </div>
+                  </div>
 
-                    <div class="u-container-style u-image u-image-round u-list-item u-radius-25
-                                u-repeater-item u-shading u-image-3"
-                         style="background-image: url('{% static "images/img3.jpeg" %}');"
-                         data-image-width="425" data-image-height="283"
-                         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
-                            <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-3"></div>
-                            <h4 class="u-text u-text-default u-text-6">Технічна документація</h4>
-                            <p class="u-text u-text-default u-text-7">Креативне Портфоліо Пайтон Розробника</p>
-                        </div>
+                  <div class="u-list-item u-repeater-item">
+                    <div class="u-container-layout u-valign-top">
+                      <h3 class="u-align-center u-text u-text-palette-1-base" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">
+                        3
+                      </h3>
+                      <h6 class="u-align-center u-text">Роки активного навчання</h6>
                     </div>
-
-                    <div class="u-container-style u-image u-image-round u-list-item u-radius-25
-                                u-repeater-item u-shading u-image-4"
-                         style="background-image: url('{% static "images/img4.jpeg" %}');"
-                         data-image-width="425" data-image-height="239"
-                         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
-                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-4">
-                            <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-4"></div>
-                            <h4 class="u-text u-text-default u-text-8">Веб-сайт розробки</h4>
-                            <p class="u-text u-text-default u-text-9">Ефективне Портфоліо Пайтон Розробника</p>
-                        </div>
-                    </div>
-
-                    <div class="u-container-style u-image u-image-round u-list-item u-radius-25
-                                u-repeater-item u-shading u-image-5"
-                         style="background-image: url('{% static "images/img5.jpeg" %}');"
-                         data-image-width="425" data-image-height="319"
-                         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
-                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-5">
-                            <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-5"></div>
-                            <h4 class="u-text u-text-default u-text-10">Аналіз коду</h4>
-                            <p class="u-text u-text-default u-text-11">Індивідуальне Портфоліо Пайтон Розробника</p>
-                        </div>
-                    </div>
-
-                    <div class="u-container-style u-image u-image-round u-list-item u-radius-25
-                                u-repeater-item u-shading u-image-6"
-                         style="background-image: url('{% static "images/img6.jpeg" %}');"
-                         data-image-width="425" data-image-height="271"
-                         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
-                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-6">
-                            <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-6"></div>
-                            <h4 class="u-text u-text-default u-text-12">Тестування програм</h4>
-                            <p class="u-text u-text-default u-text-13">Сучасне Портфоліо Пайтон Розробника</p>
-                        </div>
-    </section>
-
-    <section class="skrollable u-clearfix u-container-align-center u-image u-parallax u-shading u-uploaded-video u-section-4" id="carousel_4bf1" data-image-width="425" data-image-height="283">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <h2 class="u-align-center u-text u-text-default u-text-1"
-                data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">
-                Портфоліо пайтон розробник складається
-            </h2>
-            <p class="u-align-center u-text u-text-2"
-               data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                Портфоліо пайтон розробника - це візитна картка його навичок та досягнень. Тут представлені проекти,
-                які демонструють його експертність у програмуванні.
-            </p>
-            <a href="#"
-               class="u-active-white u-align-center u-border-2 u-border-active-white u-border-hover-white
-                      u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50
-                      u-text-active-black u-text-body-alt-color u-text-hover-black u-btn-1"
-               data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="700">
-                Get Free Estimate
-            </a>
-        </div>
-    </section>
-
-    <section class="u-clearfix u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-section-5"
-             id="sec-31fd">
-        <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-            <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-                <div class="u-layout">
-                    <div class="u-layout-row">
-
-                        <div class="u-container-align-center u-container-style u-image u-image-round u-layout-cell
-                                    u-radius u-right-cell u-size-26-lg u-size-26-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1"
-                             data-image-width="425" data-image-height="283"
-                             data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                            <div class="u-container-layout u-container-layout-1"></div>
-                        </div>
-
-                        <div class="u-align-center u-container-align-center u-container-style u-grey-5 u-layout-cell
-                                    u-left-cell u-radius u-shape-round u-size-34-lg u-size-34-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2"
-                             data-animation-name="flipIn" data-animation-duration="1500" data-animation-delay="700" data-animation-direction="X">
-                            <div class="u-container-layout u-valign-middle u-container-layout-2">
-                                <h2 class="u-align-center u-heading-font u-text u-text-1">Автоматизація завдань</h2>
-                                <p class="u-align-center u-text u-text-font u-text-2">
-                                    Кожен проект у портфоліо пайтон розробника - це можливість продемонструвати
-                                    свою творчість, креативність та технічні здібності перед потенційними роботодавцями.
-                                </p>
-
-                                <div class="u-expanded-width u-list u-list-1">
-                                    <div class="u-repeater u-repeater-1">
-
-                                        <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
-                                            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                                                <h3 class="u-align-center u-text u-text-palette-1-base u-text-3"
-                                                    data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">
-                                                    300+
-                                                </h3>
-                                                <h6 class="u-align-center u-text u-text-4">Оптимізація коду</h6>
-                                            </div>
-                                        </div>
-
-                                        <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
-                                            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
-                                                <h3 class="u-align-center u-text u-text-palette-1-base u-text-5"
-                                                    data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">
-                                                    10+
-                                                </h3>
-                                                <h6 class="u-align-center u-text u-text-6">Модульне програмування</h6>
-                                            </div>
-                                        </div>
-
-                                        <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
-                                            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
-                                                <h3 class="u-align-center u-text u-text-palette-1-base u-text-7"
-                                                    data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">
-                                                    17
-                                                </h3>
-                                                <h6 class="u-align-center u-text u-text-8">Інтеграція API</h6>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
+                  </div>
                 </div>
+              </div>
+
             </div>
+          </div>
+
         </div>
+      </div>
     </section>
 
     <section class="u-align-left u-clearfix u-container-align-center u-container-align-left u-grey-5 u-section-6" id="carousel_8047">
@@ -484,55 +273,51 @@
             data-animation-name="customAnimationIn"
             data-animation-duration="1500"
             data-animation-delay="200">
-          Серверні додатки
+          Мої проекти
         </h2>
 
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
 
-            <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius u-repeater-item
-                        u-shape-round u-white u-list-item-1"
+            {% for project in projects %}
+            <div class="u-align-left u-container-align-left u-container-style u-list-item u-repeater-item u-white"
+                 style="border-radius: 15px; overflow: hidden;"
                  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                <h5 class="u-align-left u-custom-font u-font-montserrat u-text u-text-2">Бази даних</h5>
-                <p class="u-align-left u-text u-text-3">
-                  Портфоліо пайтон розробника - це візитна картка його досягнень та навичок.
+              <div class="u-container-layout u-similar-container u-valign-top" style="padding: 20px;">
+
+                <h5 class="u-align-left u-custom-font u-font-montserrat u-text" style="font-weight: 700;">
+                  {{ project.title }}
+                </h5>
+
+                <p class="u-align-left u-text">
+                  {{ project.description }}
                 </p>
-                <div class="u-align-left u-border-2 u-border-palette-1-light-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                <h6 class="u-align-left u-text u-text-palette-1-light-1 u-text-4">Дизайн інтерфейсу</h6>
+
+                <div class="u-align-left u-border-2 u-border-palette-1-light-1 u-expanded-width u-line u-line-horizontal"></div>
+
+                {% if project.tech_stack %}
+                  <h6 class="u-align-left u-text u-text-palette-1-light-1">
+                    {{ project.tech_stack }}
+                  </h6>
+                {% endif %}
+
+                <div class="u-align-left">
+                  {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank">Переглянути</a><br>
+                  {% endif %}
+                  {% if project.github_link %}
+                    <a href="{{ project.github_link }}" target="_blank">GitHub</a>
+                  {% endif %}
+                </div>
+
               </div>
             </div>
-
-            <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius u-repeater-item
-                        u-shape-round u-white u-list-item-2"
-                 data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                <h5 class="u-align-left u-custom-font u-font-montserrat u-text u-text-5">Автоматизація завдань</h5>
-                <p class="u-align-left u-text u-text-6">
-                  У ньому зібрані проекти, що демонструють вміння створювати програми на Python.
-                </p>
-                <div class="u-align-left u-border-2 u-border-palette-1-light-1 u-expanded-width u-line u-line-horizontal u-line-2"></div>
-                <h6 class="u-align-left u-text u-text-palette-1-light-1 u-text-7">Серверні додатки</h6>
-              </div>
-            </div>
-
-            <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius u-repeater-item
-                        u-shape-round u-white u-list-item-3"
-                 data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                <h5 class="u-align-left u-custom-font u-font-montserrat u-text u-text-8">Мультиплатформені проекти</h5>
-                <p class="u-align-left u-text u-text-9">
-                  Пайтон розробник презентує свої найкращі роботи та інноваційні проекти у портфоліо.
-                </p>
-                <div class="u-align-left u-border-2 u-border-palette-1-light-1 u-expanded-width u-line u-line-horizontal u-line-3"></div>
-                <h6 class="u-align-left u-text u-text-palette-1-light-1 u-text-10">Безпека даних</h6>
-              </div>
-            </div>
-
+            {% endfor %}
           </div>
         </div>
       </div>
     </section>
+
 
 
     <section class="u-align-center u-clearfix u-container-align-center u-valign-top u-white u-section-7" id="carousel_a04c">
@@ -543,12 +328,11 @@
         <div class="u-container-layout u-valign-top u-container-layout-1">
           <h2 class="u-align-center u-text u-text-default u-text-1"
               data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-            Мультиплатформені проекти
+            Бібліотека проектів
           </h2>
           <p class="u-align-center u-text u-text-2"
              data-animation-name="fadeIn" data-animation-duration="1500" data-animation-delay="600">
-            Створення портфоліо пайтон розробника - це важлива складова для будь-якого програміста,
-            яка допомагає підвищити його професійний рівень та знайти нові кар'єрні можливості.
+            Збірка світлин розроблених проектів
           </p>
         </div>
       </div>
@@ -559,7 +343,7 @@
           <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide">
               <img class="u-back-image u-expanded"
-                   src="{% static 'images/photo-1507752533523-5186b0bc4c43.jpeg' %}"
+                   src="{% static 'images/1photo.png' %}"
                    alt="Приклад Python-проекту з базами даних">
             </div>
             <div class="u-over-slide u-shading u-over-slide-1"></div>
@@ -568,7 +352,7 @@
           <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide">
               <img class="u-back-image u-expanded"
-                   src="{% static 'images/photo-1661628014274-0df78c28beef.jpeg' %}"
+                   src="{% static 'images/2photo.png' %}"
                    alt="Автоматизація процесів Python">
             </div>
             <div class="u-over-slide u-shading u-over-slide-2"></div>
@@ -577,7 +361,7 @@
           <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide">
               <img class="u-back-image u-expanded"
-                   src="{% static 'images/photo-1563718428108-a2420c356c5c.jpeg' %}"
+                   src="{% static 'images/3photo.png' %}"
                    alt="API інтеграції в Python-проектах">
             </div>
             <div class="u-over-slide u-shading u-over-slide-3"></div>
@@ -586,7 +370,7 @@
           <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide">
               <img class="u-back-image u-expanded"
-                   src="{% static 'images/photo-1673794784636-2e69436d3eee.jpeg' %}"
+                   src="{% static 'images/4photo.png' %}"
                    alt="Мобільна сумісність проектів Python">
             </div>
             <div class="u-over-slide u-shading u-over-slide-4"></div>
@@ -595,7 +379,7 @@
           <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide">
               <img class="u-back-image u-expanded"
-                   src="{% static 'images/photo-1667983091531-72affee1bf69.jpeg' %}"
+                   src="{% static 'images/5photo.png' %}"
                    alt="Машинне навчання у Python">
             </div>
             <div class="u-over-slide u-shading u-over-slide-5"></div>
@@ -604,7 +388,7 @@
           <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide">
               <img class="u-back-image u-expanded"
-                   src="{% static 'images/photo-1578619627277-63fe240b6030.jpeg' %}"
+                   src="{% static 'images/6photo.png' %}"
                    alt="Серверні додатки Python">
             </div>
             <div class="u-over-slide u-shading u-over-slide-6"></div>
@@ -612,165 +396,106 @@
 
         </div>
       </div>
-
-      <a href="#" class="u-active-grey-80 u-align-left u-border-2 u-border-active-grey-80
-                         u-border-hover-grey-80 u-border-palette-1-base u-btn u-btn-round
-                         u-button-style u-hover-grey-80 u-none u-radius u-btn-1"
-         data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="700">
-        View more
-      </a>
     </section>
 
-
-
-
-    <section class="skrollable u-clearfix u-container-align-center u-image u-parallax u-shading u-uploaded-video u-section-8" id="carousel_2e82" data-image-width="425" data-image-height="283">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">Пайтон розробника портфоліо детальна інформація</h2>
-        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Портфоліо пайтон розробника - це візитна картка його навичок та досягнень. Тут представлені проекти, які демонструють його експертність у програмуванні.</p>
-        <a href="#" class="u-active-white u-align-center u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 u-text-active-black u-text-body-alt-color u-text-hover-black u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="700">Learn more </a>
-      </div>
-    </section>
     <section class="u-clearfix u-container-align-center u-section-9" id="carousel_9b8d">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="custom-expanded data-layout-selected u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-container-align-left u-container-style u-layout-cell u-size-32-lg u-size-32-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-align-left u-container-style u-layout-cell u-size-60 u-layout-cell-1"
+                   data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
-                  <h3 class="u-align-left u-text u-text-1">Ефективне портфоліо пайтон розробника</h3>
+                  <h3 class="u-align-left u-text u-text-1">Чому ви маєте обрати саме мене?</h3>
                   <div class="u-expanded-width u-list u-list-1">
                     <div class="u-repeater u-repeater-1">
+
                       <div class="u-container-style u-list-item u-repeater-item">
                         <div class="u-container-layout u-similar-container u-container-layout-2">
-                          <h4 class="u-text u-text-default u-text-2">Інтерактивні додатки</h4>
+                          <h4 class="u-text u-text-default u-text-2">Досвід у реальних проєктах</h4>
                           <div class="u-border-3 u-border-palette-1-light-2 u-line u-line-horizontal u-line-1"></div>
-                          <p class="u-text u-text-default u-text-3">Досвідчене Портфоліо Пайтон Розробника</p>
+                          <p class="u-text u-text-default u-text-3">Працював над веб-додатками, автоматизацією та інтеграціями на Python.</p>
                         </div>
                       </div>
+
                       <div class="u-container-style u-list-item u-repeater-item">
                         <div class="u-container-layout u-similar-container u-container-layout-3">
-                          <h4 class="u-text u-text-default u-text-4">Пайтон програміста роботи портфоліо</h4>
+                          <h4 class="u-text u-text-default u-text-4">Орієнтація на результат</h4>
                           <div class="u-border-3 u-border-palette-1-light-2 u-line u-line-horizontal u-line-2"></div>
-                          <p class="u-text u-text-default u-text-5">Продуктивне Портфоліо Пайтон Розробника</p>
+                          <p class="u-text u-text-default u-text-5">Розробляю рішення, що відповідають бізнес-цілям та приносять користь замовнику.</p>
                         </div>
                       </div>
+
                       <div class="u-container-style u-list-item u-repeater-item">
                         <div class="u-container-layout u-similar-container u-container-layout-4">
-                          <h4 class="u-text u-text-default u-text-6">Швидкість розробки</h4>
+                          <h4 class="u-text u-text-default u-text-6">Швидкість та якість</h4>
                           <div class="u-border-3 u-border-palette-1-light-2 u-line u-line-horizontal u-line-3"></div>
-                          <p class="u-text u-text-default u-text-7">Технічне Портфоліо Пайтон Розробника</p>
+                          <p class="u-text u-text-default u-text-7">Використовую сучасні інструменти для швидкої та якісної реалізації проєктів.</p>
                         </div>
                       </div>
+
                       <div class="u-container-style u-list-item u-repeater-item">
                         <div class="u-container-layout u-similar-container u-container-layout-5">
-                          <h4 class="u-text u-text-default u-text-8">Функціональні тести</h4>
+                          <h4 class="u-text u-text-default u-text-8">Чистий та оптимізований код</h4>
                           <div class="u-border-3 u-border-palette-1-light-2 u-line u-line-horizontal u-line-4"></div>
-                          <p class="u-text u-text-default u-text-9">Компетентне Портфоліо Пайтон Розробника</p>
+                          <p class="u-text u-text-default u-text-9">Дотримання PEP8, використання сучасних підходів Django та FastAPI.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="u-container-align-center-xl u-container-style u-layout-cell u-size-28-lg u-size-28-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-container-layout-6">
-                  <img class="u-expanded-width-sm u-expanded-width-xs u-image u-image-round u-radius u-image-1" src="images/photo-1652489997208-87ffeffc072b.jpeg" alt="" data-image-width="425" data-image-height="283" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-container-align-center u-palette-1-light-3 u-section-10" id="carousel_76a1">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="200">Безпека даних</h2>
-        <p class="u-align-center u-text u-text-2" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-delay="200">У ньому зібрані проекти, що демонструють вміння створювати програми на Python.</p>
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius u-repeater-item u-shape-round u-white u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-round u-radius u-image-1" data-image-width="425" data-image-height="279" src="images/8jLdwLg6TLKIQfJcZgDb_Freedom_5.jpg">
-                <h4 class="u-align-center u-text u-text-3">Розробка алгоритмів</h4>
-                <h6 class="u-align-center u-text u-text-grey-50 u-text-4">Інноваційні рішення</h6>
-              </div>
-            </div>
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius u-repeater-item u-shape-round u-white u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-round u-radius u-image-2" data-image-width="425" data-image-height="283" src="images/photo-1660127797386-abad2ee4bc32.jpeg">
-                <h4 class="u-align-center u-text u-text-5">Гнучкість інтеграції</h4>
-                <h6 class="u-align-center u-text u-text-grey-50 u-text-6">Проектні роботи</h6>
-              </div>
-            </div>
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius u-repeater-item u-shape-round u-white u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-round u-radius u-image-3" data-image-width="425" data-image-height="283" src="images/photo-1660385938160-b0dd49ef09d9.jpeg">
-                <h4 class="u-align-center u-text u-text-7">Технічна документація</h4>
-                <h6 class="u-align-center u-text u-text-grey-50 u-text-8">Веб-сайт розробки</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="u-align-center u-text u-text-default u-text-9" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></p>
-      </div>
-    </section>
+
     <section class="u-align-center u-clearfix u-container-align-center u-white u-section-11" id="carousel_fbde">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="200">Інтерактивні додатки</h2>
-        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Пайтон розробник презентує свої найкращі роботи та інноваційні проекти у портфоліо.</p>
+        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="200">Часті запитання</h2>
+        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Тут ви знайдете відповіді на найпоширеніші питання щодо моїх навичок і досвіду.</p>
         <div class="u-accordion u-collapsed-by-default u-expanded-width u-faq u-spacing-10 u-accordion-1" role="tablist">
           <div class="u-accordion-item">
-            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-1" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false" role="tab"><span class="u-accordion-link-text"> How much does it cost?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-b6d8"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-b6d8"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-1" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false" role="tab"><span class="u-accordion-link-text">Чому варто обрати саме вас?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-b6d8"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-b6d8"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-1" id="accordion-f600" aria-labelledby="link-accordion-f600" role="tabpanel">
               <div class="u-container-layout u-container-layout-1">
                 <div class="fr-view u-clearfix u-rich-text u-text">
-                  <p>Кожен проект у портфоліо пайтон розробника - це можливість продемонструвати свою творчість, креативність та технічні здібності перед потенційними роботодавцями.</p>
+                  <p>Я маю практичний досвід у створенні реальних проєктів, орієнтованих на вирішення бізнес-завдань. Поєдную технічні знання з креативним підходом.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="u-accordion-item">
-            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-2" id="link-accordion-72f4" aria-controls="accordion-72f4" aria-selected="false" role="tab"><span class="u-accordion-link-text"> How Fast Are Your Services?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-b250"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-b250"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-2" id="link-accordion-72f4" aria-controls="accordion-72f4" aria-selected="false" role="tab"><span class="u-accordion-link-text">Наскільки швидко ви працюєте?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-b250"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-b250"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-2" id="accordion-72f4" aria-labelledby="link-accordion-72f4" role="tabpanel">
               <div class="u-container-layout u-container-layout-2">
                 <div class="fr-view u-clearfix u-rich-text u-text">
-                  <p>Створення портфоліо пайтон розробника - це важлива складова для будь-якого програміста, яка допомагає підвищити його професійний рівень та знайти нові кар'єрні можливості.</p>
+                  <p>Завдяки відпрацьованим підходам та використанню сучасних інструментів я оптимізую процес розробки і виконую завдання в найкоротші терміни без втрати якості.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="u-accordion-item">
-            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-3" id="link-accordion-854e" aria-controls="accordion-854e" aria-selected="false" role="tab"><span class="u-accordion-link-text"> What types of customers have you worked with?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-4779"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-4779"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-3" id="link-accordion-854e" aria-controls="accordion-854e" aria-selected="false" role="tab"><span class="u-accordion-link-text">Яка у вас освіта?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-4779"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-4779"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-3" id="accordion-854e" aria-labelledby="link-accordion-854e" role="tabpanel">
               <div class="u-container-layout u-container-layout-3">
                 <div class="fr-view u-clearfix u-rich-text u-text">
-                  <p>Портфоліо пайтон розробника - це візитна картка його навичок та досягнень. Тут представлені проекти, які демонструють його експертність у програмуванні.</p>
+                  <p>Маю середню освіту, в майбутньому планую закінчити технічний університет, останні роки поглиблено вивчаю комп'ютерні науки, зокрема програмування, також додатково проходив курси з розробки на Python.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="u-accordion-item u-expanded-width">
-            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-4" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false" role="tab"><span class="u-accordion-link-text"> What education and/or training do you have that relates to your work?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-1e29"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-1e29"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-4" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false" role="tab"><span class="u-accordion-link-text">Скільки часу ви вивчали розробку?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-1e29"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-1e29"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-4" id="accordion-f600" aria-labelledby="link-accordion-f600" role="tabpanel">
               <div class="u-container-layout u-container-layout-4">
                 <div class="fr-view u-clearfix u-rich-text u-text">
-                  <p>Кожен проект у портфоліо пайтон розробника - це можливість продемонструвати свою творчість, креативність та технічні здібності перед потенційними роботодавцями.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="u-accordion-item u-expanded-width">
-            <a class="u-accordion-link u-active-palette-1-light-3 u-btn-round u-button-style u-grey-5 u-hover-palette-1-light-3 u-radius u-text-active-palette-1-base u-text-body-color u-text-hover-palette-1-base u-accordion-link-5" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false" role="tab"><span class="u-accordion-link-text"> Nunc sit amet nibh dolor. Integer iaculis nisi nec libero elementum?</span><span class="u-accordion-link-icon u-icon u-text-active-palette-1-base u-text-grey-30 u-text-hover-palette-1-base u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-58d2"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-58d2"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
-            </a>
-            <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-5" id="accordion-f600" aria-labelledby="link-accordion-f600" role="tabpanel">
-              <div class="u-container-layout u-container-layout-5">
-                <div class="fr-view u-clearfix u-rich-text u-text u-text-7">
-                  <p>Створення портфоліо пайтон розробника - це важлива складова для будь-якого програміста, яка допомагає підвищити його професійний рівень та знайти нові кар'єрні можливості.</p>
+                  <p>Почав вивчати інформатику на більш широкому рівні ще в середній школі, тож приблизно 3 роки тому.</p>
                 </div>
               </div>
             </div>
@@ -778,26 +503,81 @@
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-container-align-center u-section-12" id="sec-faec"> <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"> <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1"> <div class="u-gutter-0 u-layout"> <div class="u-layout-row"> <div class="u-container-style u-layout-cell u-size-28-lg u-size-28-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1"> <div class="u-container-layout u-valign-top u-container-layout-1"> <h3 class="u-align-left u-text u-text-1"> We are here to help</h3> <div class="u-expanded-width u-form u-grey-5 u-radius-50 u-form-1"> <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" source="email" name="form" style="padding: 30px;"> <div class="u-form-group u-form-name"> <label for="name-b064" class="u-label">Name</label> <input type="text" placeholder="Enter your Name" id="name-b064" name="name" class="u-border-none u-input u-input-rectangle u-radius-20" required="" fdprocessedid="3r8l7j"> </div> <div class="u-form-email u-form-group"> <label for="email-b064" class="u-label">Email</label> <input type="email" placeholder="Enter a valid email address" id="email-b064" name="email" class="u-border-none u-input u-input-rectangle u-radius-20" required="" fdprocessedid="bq1bl"> </div> <div class="u-form-group u-form-message"> <label for="message-b064" class="u-label">Message</label> <textarea placeholder="Enter your message" rows="4" cols="50" id="message-b064" name="message" class="u-border-none u-input u-input-rectangle u-radius-20" required=""></textarea> </div> <div class="u-align-left u-form-group u-form-submit"> <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-palette-1-base u-radius-30 u-btn-1">Send</a> <input type="submit" value="submit" class="u-form-control-hidden"> </div> <div class="u-form-send-message u-form-send-success">Дякую! Ваше повідомлення відправлене.</div> <div class="u-form-send-error u-form-send-message">Відправлення не вдалося. Будь-ласка, виправте помилки і спробуйте ще раз.</div> <input type="hidden" value="" name="recaptchaResponse"> <input type="hidden" name="formServices" value="5a97d37e-e496-bf1a-b5a2-76fb68281ad4"> </form> </div> </div> </div> <div class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-32-lg u-size-32-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2"> <div class="u-container-layout u-valign-top u-container-layout-2"> <img class="custom-expanded u-image u-image-round u-radius u-image-1" src="images/photo-1626003573503-2e088d82c647.jpeg" alt="" data-image-width="425" data-image-height="283"> </div> </div> </div> </div> </div> </div> </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-section-12" id="sec-faec">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout-row">
+                    <div class="u-container-style u-layout-cell u-size-28-lg u-size-60-md u-layout-cell-1">
+                        <div class="u-container-layout u-valign-top u-container-layout-1">
+                            <h3 class="u-align-left u-text">Напишіть нам</h3>
+                            <div class="u-expanded-width u-form u-grey-5 u-radius-50 u-form-1">
+                                <form method="post" action="{% url 'index' %}" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 30px;">
+                                    {% csrf_token %}
+                                    {{ form.non_field_errors }}
+                                    <div class="u-form-group">
+                                        {{ form.name.errors }}
+                                        {{ form.name.label_tag }}
+                                        {{ form.name }}
+                                    </div> <div class="u-form-group">
+                                    {{ form.email.errors }}
+                                    {{ form.email.label_tag }}
+                                    {{ form.email }}
+                                </div>
+                                    <div class="u-form-group">
+                                    {{ form.message.errors }}
+                                    {{ form.message.label_tag }}
+                                    {{ form.message }}
+                                    </div>
+                                    <div class="u-align-left u-form-group u-form-submit">
+                                        <input type="submit" value="Відправити">
+                                    </div>
+                                    {% if success %}
+                                    <div class="u-form-send-message u-form-send-success"> Дякую! Ваше повідомлення відправлене. </div>
+                                    {% endif %}
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-size-32-lg u-size-60-md u-layout-cell-2">
+                        <div class="u-container-layout u-valign-top u-container-layout-2">
+                            <h3>Контакти:</h3>
+                            {% if contact %}
+                            <p>Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                            </p> {% if contact.phone %}<p>Телефон: {{ contact.phone }}</p>
+                            {% endif %} {% if contact.github %}
+                            <p>GitHub: <a href="{{ contact.github }}" target="_blank">{{ contact.github }}</a>
+                            </p>{% endif %} {% if contact.linkedin %}
+                            {% endif %}
+                            {% if contact.portfolio_site %}
+                            {% endif %} {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="u-clearfix u-grey-light-2 u-typography-custom-page-typography-12--Map u-section-13" id="sec-4354">
       <div class="u-expanded u-grey-light-2 u-map">
         <div class="embed-responsive">
-          <iframe class="embed-responsive-item" src="https://maps.google.com/maps?output=embed&amp;q=Manhattan&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyTWFuaGF0dGFuJTIyJTJDJTIyem9vbSUyMiUzQW51bGwlMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="></iframe>
+          <iframe class="embed-responsive-item"
+                src="https://maps.google.com/maps?output=embed&amp;q=Одеса&amp;t=m"
+                allowfullscreen=""
+                loading="lazy">
+          </iframe>
         </div>
       </div>
     </section>
 
-
-
     <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Приклад тексту. Клікніть, щоб вибрати елемент "Текст".</p>
+        <p class="u-small-text u-text u-text-variant u-text-1">&copy; 2025 - portfolio<br>
+            Всі права захищені<br>
+          Сайт захощений <a href="https://www.pythonanywhere.com/">pythonanywhere</a></p>
       </div>
     </footer>
 
-    <section class="u-backlink u-clearfix u-grey-80">
-      This <a href="https://nicepage.com/html5-template">HTML5 Template</a> was created with Nicepage Website Builder
-    </section>
 
 </body></html>

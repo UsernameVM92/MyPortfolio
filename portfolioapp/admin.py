@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Profile, Skill, Experience, Contact, Project
+from .models import Profile, Skill, Experience, Contact, Project, Message
 
 
 class SkillInline(admin.TabularInline):
@@ -26,3 +26,4 @@ admin.site.register(Skill)
 admin.site.register(Experience)
 admin.site.register(Contact)
 admin.site.register(Project)
+admin.site.register(Message)

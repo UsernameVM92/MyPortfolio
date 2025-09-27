@@ -57,7 +57,6 @@ class Contact(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=20, blank=True, null=True)
     github = models.URLField(blank=True, null=True)
-    linkedin = models.URLField(blank=True, null=True)
     portfolio_site = models.URLField(blank=True, null=True)
 
     def __str__(self):
@@ -75,3 +74,13 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Message(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Message from {self.name}"
